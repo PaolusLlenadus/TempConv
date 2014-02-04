@@ -1,0 +1,21 @@
+<h1> Temperature Converter </h1>
+<%= form_for :temperature do |f| %>
+  <p>
+    <%= f.label :celsius %><br>
+    <%= f.text_field :celsius %>
+  </p>
+ 
+  <p>
+    <%= f.label :fahrenheit %><br>
+    <%= f.text_field :fahrenheit %>
+  </p>
+
+   <p>
+    <%= f.label :kelvin %><br>
+    <%= f.text_field :kelvin %>
+  </p>
+ 
+  <p>
+    <%= link_to 'Calculate', action: 'results' %>
+  </p>
+<% end %>
